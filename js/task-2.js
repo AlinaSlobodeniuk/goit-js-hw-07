@@ -29,8 +29,8 @@ const gallery = document.querySelector(".gallery");
 
 function listGallery(images) {
 return images.map((img) =>  {
- return `<li class="image">
-<img src="${img.url}" alt="${img.alt}" width = "200px" height = "200px" " class="galleryImage"/></li>`})
+ return `<li>
+<img src="${img.url}" alt="${img.alt}" width = "200px" height = "200px"/></li>`})
 .join("");
 }
 
