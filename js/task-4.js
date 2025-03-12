@@ -9,12 +9,14 @@ function sendSubmit(event) {
     const password = form.elements.password.value.trim();
     
     if (email === "" || password === "") {
-      return console.log("All form fields must be filled in");
+      return alert("All form fields must be filled in");
     }
 
-    const str = `Email: ${email}, Password: ${password}`;
-    const result = str.split(",").reduce
+    const formData = {
+      email: email,
+      password: password
+    };
   
-    console.log(`Email: ${email}, Password: ${password}`);
+    console.log(formData);
     form.reset();
 }
