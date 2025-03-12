@@ -7,7 +7,7 @@ els.forEach(el => {
 
     const title = el.querySelector("h2").textContent;
 
-    const elements = el.querySelectorAll("li").length;
+    const elements = el.querySelectorAll("ul li").length;
 
     console.log(`Category: ${title}`);
     console.log(`Elements: ${elements}`);
